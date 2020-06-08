@@ -15,7 +15,7 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-
+const port = process.env.PORT || 3000;
 // log to file
 app.use(morgan('combined', {
   stream: fs.createWriteStream(
@@ -35,7 +35,7 @@ app.use(function (err, req, res, next) {
   res.status(500).end();
 });
 
-app.listen(config.PORT, () => {
+app.listen(port, () => {
   console.log(
     `listening at http://localhost:${config.PORT} (${config.MODE} mode)`
   );
