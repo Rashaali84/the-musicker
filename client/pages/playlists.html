@@ -5,11 +5,11 @@
     <title>The Musicker Company</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="css/tabcontent.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <script type="text/javascript" src="css/tabcontent.js"></script>
+    <link rel="icon" type="image/png" href="../favicon.ico" />
+    <link href="../css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../css/tabcontent.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <script type="text/javascript" src="../css/tabcontent.js"></script>
   </head>
   <body>
     <div id="templatemo_wrapper">
@@ -17,23 +17,33 @@
         <div id="templatemo_menu">
           <div id="pettabs" class="indentmenu">
             <ul>
-              <li><a href="index.html" class="selected">Home</a></li>
-              <li><a href="pages/artists.html">Artists</a></li>
-              <li><a href="pages/albums.html">Albums</a></li>
-              <li><a href="pages/playlists.html">playlists</a></li>
+              <li><a href="../index.html">Home</a></li>
               <li>
-                <a href="pages/aboutus.html">About Us</a>
+                <a href="artists.html">Artists</a>
               </li>
               <li>
-                <a href="pages/contactus.html" style="border-right: none;"
+                <a href="albums.html">Albums</a>
+              </li>
+              <li>
+                <a href="playlists.html" class="selected" rel="tab2"
+                  >playlists</a
+                >
+              </li>
+              <li>
+                <a href="aboutus.html">About Us</a>
+              </li>
+              <li>
+                <a href="contactus.html" style="border-right: none;"
                   >Contact Us</a
                 >
               </li>
             </ul>
           </div>
           <div class="tabcontentstyle">
-            <div class="tabcontent">
-              Hello Guest! Welcome to our Website.
+            <div id="tab2" class="tabcontent">
+              <ul>
+                <li><a href="#">Create PlayList</a></li>
+              </ul>
             </div>
           </div>
           <script type="text/javascript">
@@ -45,38 +55,30 @@
         </div>
         <!-- end of mneu -->
 
-        <div id="templatemo_banner">
-          <h1>Musicker</h1>
-          <p>the most reliable connection, the best network and support</p>
-        </div>
-
         <div id="templatemo_content">
           <div id="content_top"></div>
 
           <div class="templatemo_content_section_01">
             <div class="section_01_left">
               <h1>Welcome to Musicker Company</h1>
-              <img src="images/templatemo_image_01.jpg" alt="image" />
+              <img src="../images/templatemo_image_01.jpg" alt="image" />
               <p>
-                Donec enim enim, imperdiet quis, mollis a, elementum a, diam.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Here you are a list of playlists that are stored in out db ,
+                feel free to check each name , Click on Click me ! button to
+                display details at the bottom of the page ...
               </p>
-              <p>
-                Donec in nisi. Etiam sit amet turpis. Duis nulla diam, posuere
-                ac, varius id, ullamcorper sit amet, libero. Nam sodales, pede
-                vel dapibus lobortis, ipsum diam molestie risus, a vulputate
-                risus nisl pulvinar lacus.
-              </p>
+              <div id="showData"></div>
+              <div class="cleaner">&nbsp;</div>
+              <p></p>
+              <div id="showDetails"></div>
+              <div id="songList"></div>
+              <div class="cleaner">&nbsp;</div>
             </div>
-
             <div class="section_01_right">
               <h1>Site News</h1>
 
-              <h3>Etiam dictum nisi</h3>
-              <p>
-                Donec enim enim, imperdiet quis, mollis a, elementum a, diam.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <h3>Songs Information</h3>
+              <p></p>
               <a href="#">Read more</a>
             </div>
 
@@ -164,6 +166,9 @@
         <!-- end of footer -->
       </div>
     </div>
-    <script src="./app/init.js"></script>
+    <script
+      type="text/javascript"
+      src="../app/playlists/init-playlists.js"
+    ></script>
   </body>
 </html>
