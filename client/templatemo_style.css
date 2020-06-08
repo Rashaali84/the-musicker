@@ -13,7 +13,7 @@ body {
   font-family: Verdana, Arial, san-serif;
   font-size: 12px;
   color: #e7eaeb;
-  background: #6d6a6b url(../images/templatemo_bg.jpg) repeat;
+  background: #6d6a6b url(images/templatemo_bg.jpg) repeat;
 }
 
 a:link,
@@ -62,7 +62,7 @@ img {
 
 #templatemo_wrapper {
   margin: 0 auto;
-  background: url(../images/templatemo_gradient_bg.jpg) top repeat-x;
+  background: url(images/templatemo_gradient_bg.jpg) top repeat-x;
 }
 
 #templatemo_container {
@@ -78,7 +78,7 @@ img {
   height: 250px;
   padding: 0 40px;
   margin: 0 0 5px 0;
-  background: url(../images/templatemo_banner_bg.jpg) no-repeat;
+  background: url(images/templatemo_banner_bg.jpg) no-repeat;
 }
 
 #templatemo_banner h1 {
@@ -105,7 +105,7 @@ img {
   position: relative;
   width: 956px;
   padding: 0 2px;
-  background: url(../images/templatemo_content_middle.jpg) repeat-y;
+  background: url(images/templatemo_content_middle.jpg) repeat-y;
 }
 
 #templatemo_content #content_top {
@@ -114,7 +114,7 @@ img {
   height: 10px;
   top: 0;
   left: 0;
-  background: url(../images/templatemo_content_top.jpg) no-repeat;
+  background: url(images/templatemo_content_top.jpg) no-repeat;
 }
 
 #templatemo_content h1 {
@@ -139,7 +139,7 @@ img {
   padding: 0 0 5px 30px;
   margin: 0 0 5px 0;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  background: url(../images/templatemo_list_icon.jpg) top left no-repeat;
+  background: url(images/templatemo_list_icon.jpg) top left no-repeat;
 }
 
 #templatemo_content img {
@@ -213,7 +213,7 @@ img {
 .section_02_subsection li {
   margin: 0px;
   padding: 0 0 15px 25px;
-  background: url(../images/templatemo_list_icon_02.jpg) top left no-repeat;
+  background: url(images/templatemo_list_icon_02.jpg) top left no-repeat;
 }
 
 /* footer */
@@ -224,7 +224,7 @@ img {
   padding: 15px 0 0 0;
   text-align: center;
   color: #888;
-  background: url(../images/templatemo_footer.jpg);
+  background: url(images/templatemo_footer.jpg);
 }
 
 #templatemo_footer p {

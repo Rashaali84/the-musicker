@@ -3,7 +3,7 @@
   width: 958px;
   height: 125px;
   padding: 0 1px;
-  background: url(../images/templatemo_top_panel_bg.jpg) no-repeat;
+  background: url(images/templatemo_top_panel_bg.jpg) no-repeat;
 }
 
 .indentmenu {
@@ -32,7 +32,7 @@
   padding-top: 18px;
   text-decoration: none;
   border-right: 2px solid #000; /*navy divider between menu items*/
-  background: url(../images/templatemo_menu_bg.jpg) repeat-x;
+  background: url(images/templatemo_menu_bg.jpg) repeat-x;
   outline: none;
 }
 
@@ -43,7 +43,7 @@
 .indentmenu ul li a.selected,
 .indentmenu ul li a:hover {
   color: white !important;
-  background: black url(../images/templatemo_menu_hover_bg.jpg) center center;
+  background: black url(images/templatemo_menu_hover_bg.jpg) center center;
 }
 
 .indentmenu li .last {
