@@ -34,7 +34,9 @@ app.use(function (err, req, res, next) {
   console.error(err.stack);
   res.status(500).end();
 });
-
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/index.html'));
+});
 app.listen(port, () => {
   console.log(
     `listening at http://localhost:${config.PORT} (${config.MODE} mode)`
