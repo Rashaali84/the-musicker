@@ -11,8 +11,10 @@ router.get('/artists/:id', controllers.getArtistById);
 //Albums , get
 router.get('/albums', controllers.getAlbums);
 //songs , get
-router.get('/songs/:id', controllers.getAllSongs);
-router.delete('/songs/:songId/playlists/:playId', controllers.deleteSongByPlayListId)
+router.get('/songs/', controllers.getAllSongs);
+router.get('/songs/:id', controllers.getAllSongsByPlayListId);
+router.delete('/songs/:songId/playlists/:playId', controllers.deleteSongByPlayListId);
+router.post('/songs/playlists/', controllers.AddSongPlayList)
 //PlayList get , get by id, update ,delete
 router.get('/playlists', controllers.getPlayLists);
 router.get('/playlists/:id', controllers.playListsById);

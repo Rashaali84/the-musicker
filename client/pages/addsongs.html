@@ -65,19 +65,22 @@
               <h1>Welcome to Musicker Company</h1>
               <img src="../images/templatemo_image_01.jpg" alt="image" />
               <p>
-                Create a new playlist from here ...
+                Create a new playlist first from here
+                <a href="CreatePlayList.html">Create PlayList</a> ...
               </p>
               <div>
                 <table>
                   <tr>
                     <td>
-                      <input
-                        type="text"
-                        name="playListName"
-                        id="playListName"
-                      />
-                      <button type="button" id="createPlayList">Create</button>
-                      <a href="playlists.html">Back to playLists main page</a>
+                      <select id="playlistDDL" name="playlistDDL"> </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <select id="SongsDDL" name="songsDDL"> </select>
+                    </td>
+                    <td>
+                      <button type="button" id="createPlayList">AddSong</button>
                     </td>
                   </tr>
                 </table>
@@ -179,9 +182,8 @@
         <!-- end of footer -->
       </div>
     </div>
-    <script
-      type="text/javascript"
-      src="../app/playlists/create-playlist.js"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../app/songs/init-songs.js"></script>
   </body>
 </html>

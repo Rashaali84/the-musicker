@@ -21,7 +21,9 @@ window.onload = () => {
         .catch(err => console.error(err));
 }
 function deleteSongByPlayListId(songId, playListId) {
-    var params = {
+
+    //Good piece of code to use later :) 
+    /*var params = {
         songId: songId,
         playListId: playListId
     };
@@ -29,7 +31,7 @@ function deleteSongByPlayListId(songId, playListId) {
     var query = Object.keys(params)
         .map(k => esc(k) + '=' + esc(params[k]))
         .join('&');
-    console.log(query);
+    console.log(query);*/
 
     fetch(`/api/songs/${songId}/playlists/${playListId}`, {
         method: 'DELETE'

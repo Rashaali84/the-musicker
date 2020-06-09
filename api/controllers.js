@@ -44,6 +44,17 @@ const handlers = {
 
     },
     getAllSongs: async (req, res) => {
+        const sql = `SELECT * FROM Tracks `;
+
+        db.all(sql, (err, rows) => {
+            if (err) {
+                res.status(400).json({ "error": err.message });
+                return;
+            }
+            res.json(rows)
+        });
+    },
+    getAllSongsByPlayListId: async (req, res) => {
         const sql = `SELECT Tracks.TrackId as TrackId,Tracks.Name as TrackName, Playlists.Name as PlayListName ,Playlists.PlaylistId as PlayListId
                 FROM     Playlists INNER JOIN
                   Playlist_Track ON Playlists.PlaylistId = Playlist_Track.PlaylistId INNER JOIN
@@ -106,6 +117,23 @@ const handlers = {
     },
     deletePlayList: async (req, res) => {
         const sql = `Delete from PlayLists where Playlists.PlaylistId =${req.params.id}`;
+
+        db.all(sql, (err, rows) => {
+            if (err) {
+                res.status(400).json({ "error": err.message });
+                return;
+            }
+            res.json(rows)
+        });
+    },
+    AddSongPlayList: async (req, res) => {
+        console.log(req.body.songId);
+        console.log(req.body.playId);
+        const sql = `INSERT INTO Playlist_track
+                       (PlayListId, TrackId)
+                       VALUES
+                      (${req.body.playId},${req.body.songId})
+                       `;
 
         db.all(sql, (err, rows) => {
             if (err) {
