@@ -115,6 +115,22 @@ const handlers = {
             res.json(rows)
         });
     }
+    , AddPlaylist: async (req, res) => {
+        console.log(req.body.name);
+        const sql = ` INSERT INTO Playlists
+                       (Name)
+                       VALUES
+                      ('${req.body.name}')
+                       `;
+
+        db.all(sql, (err, rows) => {
+            if (err) {
+                res.status(400).json({ "error": err.message });
+                return;
+            }
+            res.json(rows)
+        });
+    }
 };
 
 module.exports = handlers;

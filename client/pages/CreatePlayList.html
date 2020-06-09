@@ -42,7 +42,7 @@
           <div class="tabcontentstyle">
             <div id="tab2" class="tabcontent">
               <ul>
-                <li><a href="CreatePlayList.html">Create PlayList</a></li>
+                <li><a href="#">Create PlayList</a></li>
               </ul>
             </div>
           </div>
@@ -63,15 +63,26 @@
               <h1>Welcome to Musicker Company</h1>
               <img src="../images/templatemo_image_01.jpg" alt="image" />
               <p>
-                Here you are a list of playlists that are stored in out db ,
-                feel free to check each name , Click on Click me ! button to
-                display details at the bottom of the page ...
+                Create a new playlist from here ...
               </p>
-              <div id="showData"></div>
+              <div>
+                <table>
+                  <tr>
+                    <td>
+                      <input
+                        type="text"
+                        name="playListName"
+                        id="playListName"
+                      />
+                      <button type="button" id="createPlayList">Create</button>
+                      <a href="playlists.html">Back to playLists main page</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
               <div class="cleaner">&nbsp;</div>
               <p></p>
-              <div id="showDetails"></div>
-              <div id="songList"></div>
+
               <div class="cleaner">&nbsp;</div>
             </div>
             <div class="section_01_right">
@@ -168,7 +179,7 @@
     </div>
     <script
       type="text/javascript"
-      src="../app/playlists/init-playlists.js"
+      src="../app/playlists/create-playlist.js"
     ></script>
   </body>
 </html>
