@@ -5,7 +5,7 @@ window.onload = () => {
 }
 function searchSong() {
     let searchText = document.getElementById('songName').value;
-    fetch('/api/songs/search/' + searchText, {
+    fetch('/api/songs/search/' + encodeURIComponent(searchText.trim()), {
         method: 'GET'
     })
         .then(res => {
