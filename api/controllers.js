@@ -158,6 +158,18 @@ const handlers = {
             }
             res.json(rows)
         });
+    },
+    searchSong: async (req, res) => {
+        console.log(req.params.searchSong);
+        const sql = `SELECT * FROM TRACKS WHERE NAME LIKE '%${req.params.searchSong}%'`;
+        console.log(sql);
+        db.all(sql, (err, rows) => {
+            if (err) {
+                res.status(400).json({ "error": err.message });
+                return;
+            }
+            res.json(rows)
+        });
     }
 };
 

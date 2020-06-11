@@ -15,6 +15,7 @@ router.get('/songs/', controllers.getAllSongs);
 router.get('/songs/:id', controllers.getAllSongsByPlayListId);
 router.delete('/songs/:songId/playlists/:playId', controllers.deleteSongByPlayListId);
 router.post('/songs/playlists/', controllers.AddSongPlayList)
+router.get('/songs/search/:searchSong/', controllers.searchSong)
 //PlayList get , get by id, update ,delete
 router.get('/playlists', controllers.getPlayLists);
 router.get('/playlists/:id', controllers.playListsById);

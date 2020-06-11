@@ -66,15 +66,23 @@
               <h1>Welcome to Musicker Company</h1>
               <img src="../images/templatemo_image_01.jpg" alt="image" />
               <p>
-                Here you are a list of playlists that are stored in out db ,
-                feel free to check each name , Click on Click me ! button to
-                display details at the bottom of the page ...
+                Search for a song ...
               </p>
-              <div id="showData"></div>
+              <div>
+                <table>
+                  <tr>
+                    <td>
+                      <input type="text" id="songName" />
+                    </td>
+                    <td>
+                      <button type="button" id="searchSong">Search Song</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
               <div class="cleaner">&nbsp;</div>
-              <p></p>
-              <div id="showDetails"></div>
-              <div id="songList"></div>
+              <p> <div id="results"></div></p>
+
               <div class="cleaner">&nbsp;</div>
             </div>
             <div class="section_01_right">
@@ -82,7 +90,7 @@
 
               <h3>Songs Information</h3>
               <p></p>
-              <a href="addsongs.html">Add Songs</a>
+              <a href="#">Read more</a>
             </div>
 
             <div class="cleaner">&nbsp;</div>
@@ -169,9 +177,8 @@
         <!-- end of footer -->
       </div>
     </div>
-    <script
-      type="text/javascript"
-      src="../app/playlists/init-playlists.js"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../app/songs/search-songs.js"></script>
   </body>
 </html>
